@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { caca } from "../label/mock";
+import { caca, swiperslide } from "../label/mock";
+import Image from "next/image";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -37,7 +38,7 @@ export const Lightbox = () => {
                 src={path}
                 alt="pozaa"
                 layout="fixed"
-                height={400}
+                height="50%"
                 width={400}
               />
             </SwiperSlide>
@@ -54,36 +55,13 @@ export const Lightbox = () => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-        </SwiperSlide>
+        {swiperslide.map(({ mypath }, key) => {
+          return (
+            <SwiperSlide key={key}>
+              <img src={mypath} alt="" />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );

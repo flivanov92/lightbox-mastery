@@ -17,7 +17,7 @@ body {
 }
 
 .swiper {
-  width: 50%;
+  width: 30%;
   height: 100%;
 }
 
@@ -43,7 +43,7 @@ body {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 10%;
   height: 100%;
   object-fit: cover;
 }
@@ -91,4 +91,17 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.subtitle {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  justify-content: start;
+  align-items: flex-end;
+  height: 400px;
+}
+
+img {
+  height: 200px;
 }
