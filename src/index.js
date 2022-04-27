@@ -1,6 +1,6 @@
 import "./index.css";
 import { render } from "@testing-library/react";
-import App from "./component/app/app";
+import App from "./app/app";
 
 const here = document.getElementById("mypage");
 const app = <App />;

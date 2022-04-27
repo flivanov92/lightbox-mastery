@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
-import { caca } from "./mock";
+import { caca } from "../label/mock";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
