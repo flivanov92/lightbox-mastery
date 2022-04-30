@@ -1,9 +1,9 @@
-import { Lightbox } from "../lightbox/lightbox";
+import { LightboxMastery } from "../lightboxMastery/lightboxMastery";
 
 const App = () => {
   return (
     <>
-      <Lightbox></Lightbox>
+      <LightboxMastery></LightboxMastery>
     </>
   );
 };

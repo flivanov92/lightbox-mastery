@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { caca, swiperslide } from "../label/mock";
-import Image from "next/image";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -14,7 +14,7 @@ import "./style.css";
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper";
 
-export const Lightbox = () => {
+export const LightboxMastery = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
